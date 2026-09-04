@@ -235,6 +235,77 @@ a:hover{ text-decoration: underline; }
 }
 .services-note{ margin:0; font-size: 0.88rem; }
 
+.testimonial-grid{
+  display:grid; grid-template-columns: 1fr 1fr; gap: 24px;
+}
+.testimonial-card{
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 30px;
+  margin: 0;
+}
+.testimonial-card blockquote{
+  margin: 0 0 20px;
+  padding: 0;
+  position: relative;
+}
+.testimonial-card blockquote p{
+  color: var(--text);
+  font-size: 1.02rem;
+  max-width: none;
+  margin: 0;
+}
+.testimonial-card figcaption{
+  display:flex; flex-direction: column; gap: 4px;
+}
+.testimonial-name{
+  font-family: var(--font-display); font-weight: 600; color: var(--text);
+  font-size: 0.92rem;
+}
+.testimonial-role{
+  font-size: 0.85rem; color: var(--text-muted); margin-bottom: 8px;
+}
+
+.testimonial-grid{
+  display:grid; grid-template-columns: 1fr 1fr; gap: 24px;
+}
+.testimonial-card{
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 30px;
+  margin: 0;
+  position: relative;
+}
+.testimonial-card::before{
+  content: '"';
+  font-family: var(--font-display);
+  font-size: 3rem;
+  color: var(--accent);
+  opacity: 0.35;
+  line-height: 1;
+  display: block;
+  margin-bottom: 4px;
+}
+.testimonial-card blockquote{
+  margin: 0 0 20px;
+}
+.testimonial-card blockquote p{
+  color: var(--text);
+  font-size: 1rem;
+  max-width: none;
+  margin: 0;
+}
+.testimonial-card figcaption{
+  display:flex; flex-direction:column; gap: 4px;
+  padding-top: 16px; border-top: 1px solid var(--border);
+}
+.testimonial-name{ font-family: var(--font-display); font-size: 0.9rem; color: var(--text); font-weight: 600; }
+.testimonial-role{ font-size: 0.85rem; color: var(--text-muted); }
+.testimonial-card .case-stack{ margin-top: 8px; }
+
 /* ===== Demos ===== */
 .demo{ margin-bottom: 56px; }
 .demo:last-child{ margin-bottom: 0; }
@@ -276,6 +347,7 @@ a:hover{ text-decoration: underline; }
 @media (max-width: 860px){
   .hero-grid{ grid-template-columns: 1fr; gap: 36px; }
   .case-grid{ grid-template-columns: 1fr; }
+  .testimonial-grid{ grid-template-columns: 1fr; }
   .skills-grid{ grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 560px){
