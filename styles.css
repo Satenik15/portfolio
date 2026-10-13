@@ -87,12 +87,6 @@ a:hover{ text-decoration: underline; }
 .site-nav{ display:flex; gap: 28px; align-items:center; }
 .site-nav a{ color: var(--text-muted); font-size: 0.92rem; }
 .site-nav a:hover{ color: var(--text); text-decoration:none; }
-.nav-cta{
-  color: var(--text) !important;
-  border: 1px solid var(--border);
-  padding: 6px 14px; border-radius: var(--radius);
-}
-.nav-cta:hover{ border-color: var(--accent); }
 
 /* ===== Buttons ===== */
 .btn{
@@ -229,10 +223,6 @@ a:hover{ text-decoration: underline; }
   padding: 26px;
 }
 
-.services-cta{
-  margin-top: 40px;
-  display:flex; align-items:center; gap:18px; flex-wrap:wrap;
-}
 .services-note{ margin:0; font-size: 0.88rem; }
 
 .testimonial-grid{
@@ -331,11 +321,6 @@ a:hover{ text-decoration: underline; }
 .skill-group h3{ font-size: 0.85rem; color: var(--accent); text-transform: none; }
 .skill-group p{ font-size: 0.92rem; }
 
-/* ===== Contact ===== */
-.section-contact{ text-align: left; }
-.contact-inner h2{ font-size: 1.8rem; }
-.contact-links{ display:flex; gap: 14px; flex-wrap: wrap; margin-top: 22px; }
-
 /* ===== Footer ===== */
 .site-footer{
   border-top: 1px solid var(--border);
@@ -352,7 +337,6 @@ a:hover{ text-decoration: underline; }
 }
 @media (max-width: 560px){
   .site-nav{ gap: 16px; }
-  .site-nav a:not(.nav-cta){ display:none; }
   .hero{ padding: 56px 0 48px; }
   .section{ padding: 56px 0; }
   .case-study{ padding: 24px; }
